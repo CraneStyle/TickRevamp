@@ -1,0 +1,53 @@
+### Tick.delay | pattern: TickAPI\.Tick\.delay\( | matches=90 files=60
+.\StarterPlayer\StarterPlayerScripts_[StarterPlayerScripts]\PlayerModule_[Module]\ControlModule_[Module]\ControlModule_[Module].luau:377:			--MobileInputClock = TickAPI.Tick.delay(
+.\ServerScriptService\Modules_[Folder]\SpawnManager_[Module]\SpawnManager_[Module].luau:387:	TickAPI.Tick.delay(
+.\ServerScriptService\Modules_[Folder]\Spawner_[Module].luau:336:	self.SleepClock = TickAPI.Tick.delay(
+.\ServerScriptService\Modules_[Folder]\QuestManager_[Module]\QuestManager_[Module].luau:134:	TickAPI.Tick.delay(
+
+### Tick.recur | pattern: TickAPI\.Tick\.recur\( | matches=60 files=50
+.\ReplicatedFirst\Loading_[Folder]\LoadingScreen_[ScreenGui]\AnimatedFlipLoadingWheel_[Local]\AnimatedFlipLoadingWheel_[Local].client.luau:119:	Clock = TickAPI.Tick.recur(
+.\ReplicatedFirst\LocalOnly_[Folder]\Init_Scripts_[Local]\SetupCliffAreaScreenSize_AndANIMATION_[Module]\SetupCliffAreaScreenSize_AndANIMATION_[Module].luau:86:local Clock = TickAPI.Tick.recur(
+.\ReplicatedFirst\LocalOnly_[Folder]\Init_Scripts_[Local]\LocalInitilizer_[Module]\LocalGeneralConfig_[Module]\UI_Initilizer_[Module]\UI_Initilizer_[Module].luau:45:TickAPI.Tick.recur(
+.\ReplicatedFirst\LocalOnly_[Folder]\Init_Scripts_[Local]\LocalInitilizer_[Module]\LocalGeneralConfig_[Module]\UI_Initilizer_[Module]\CertingModerator_[Module]\CertingModerator_[Module].luau:73:	SaftyClock = TickAPI.Tick.recur(
+
+### Tick.remove | pattern: TickAPI\.Tick\.remove\( | matches=0 files=0
+
+### Tick.update | pattern: TickAPI\.Tick\.update\( | matches=8 files=6
+.\ServerStorage\RoBase_[Folder]\Core_[Folder]\TickAPI_[Module]\TickAPI_[Module].luau:35:		TickAPI.Tick.update(SteppedTime)						
+.\ReplicatedFirst\LocalOnly_[Folder]\Init_Scripts_[Local]\SetupCliffAreaScreenSize_AndANIMATION_[Module]\TickAPI_[Module]\TickAPI_[Module].luau:17:		TickAPI.Tick.update(SteppedTime)						
+.\ReplicatedStorage\SharedModules_[Folder]\TickAPI_[Module]\TickAPI_[Module].luau:21:	--	TickAPI.Tick.update(SteppedTime)						
+.\ReplicatedStorage\SharedModules_[Folder]\TickAPI_[Module]\TickAPI_[Module].luau:39:	TickAPI.Tick.update(SteppedTime)						
+
+### Tick.getClocks | pattern: TickAPI\.Tick\.getClocks | matches=0 files=0
+
+### Tick.event | pattern: TickAPI\.Tick\.event\( | matches=0 files=0
+
+### Tick:colon | pattern: TickAPI\.Tick: | matches=4 files=2
+.\StarterGui\Menu_[ScreenGui]\Locked_[Folder]\MenuHolder_[Frame]\Outer_[Frame]\Cards_[Folder]\PrimaryCard_[ImageLabel]\PrimaryCardControler_[Module].luau:124:		TickAPI.Tick:remove(LastTickObject)
+.\StarterGui\Menu_[ScreenGui]\Locked_[Folder]\MenuHolder_[Frame]\Outer_[Frame]\Cards_[Folder]\PrimaryCard_[ImageLabel]\PrimaryCardControler_[Module].luau:141:		TickAPI.Tick:remove(LastTickObject)
+.\ServerStorage\DEVELOPER_[Folder]\ARCHIVE_VAULT_[Folder]\REFERENCE_VAULT_[Folder]\REFERENCES_UI_ASSETS_[Folder]\Menu_[Folder]\Menu_[ScreenGui]\Locked_[Folder]\MenuHolder_[Frame]\Outer_[Frame]\Cards_[Folder]\PrimaryCard_[ImageLabel]\PrimaryCardControler_[Module].luau:124:		TickAPI.Tick:remove(LastTickObject)
+.\ServerStorage\DEVELOPER_[Folder]\ARCHIVE_VAULT_[Folder]\REFERENCE_VAULT_[Folder]\REFERENCES_UI_ASSETS_[Folder]\Menu_[Folder]\Menu_[ScreenGui]\Locked_[Folder]\MenuHolder_[Frame]\Outer_[Frame]\Cards_[Folder]\PrimaryCard_[ImageLabel]\PrimaryCardControler_[Module].luau:141:		TickAPI.Tick:remove(LastTickObject)
+
+### Tickh.delay | pattern: TickAPI\.Tickh\.delay\( | matches=71 files=42
+.\ServerScriptService\Modules_[Folder]\SpawnManager_[Module]\SpawnManager_[Module].luau:300:	TickAPI.Tickh.delay(
+.\ServerScriptService\Modules_[Folder]\SpawnManager_[Module]\SpawnBehaviorControler_[Module]\SpawnBehavior_[Module]\SpawnBehavior_[Module].luau:151:		TickAPI.Tickh.delay(
+.\ServerScriptService\Modules_[Folder]\SpawnManager_[Module]\SpawnBehaviorControler_[Module]\SpawnBehavior_[Module]\SpawnBehavior_[Module].luau:372:		TickAPI.Tickh.delay(
+.\ServerScriptService\Modules_[Folder]\SpawnManager_[Module]\Includes_[Folder]\GroupManagment_[Module].luau:68:		GroupDataClock = TickAPI.Tickh.delay(
+
+### Tickh.recur | pattern: TickAPI\.Tickh\.recur\( | matches=47 files=43
+.\ReplicatedFirst\LocalOnly_[Folder]\UIControls_[Folder]\GroupInviteWindow_[Folder]\GroupInviteController_[Module].luau:216:	TickAPI.Tickh.recur(
+.\ReplicatedFirst\LocalOnly_[Folder]\UIControls_[Folder]\GroupInviteWindow_[Folder]\GroupInviteController_[Module].luau:398:TickAPI.Tickh.recur(
+.\ReplicatedFirst\LocalOnly_[Folder]\Init_Scripts_[Local]\LocalInitilizer_[Module]\LocalGeneralConfig_[Module]\UI_Initilizer_[Module]\CertingModerator_[Module]\CertingModerator_[Module].luau:221:CharacterSheetCertClock = TickAPI.Tickh.recur(
+.\ReplicatedFirst\LocalOnly_[Folder]\Init_Scripts_[Local]\LocalInitilizer_[Module]\LocalGeneralConfig_[Module]\UI_Initilizer_[Module]\CertingModerator_[Module]\CertingModerator_[Module].luau:244:ServerTypeSelected = TickAPI.Tickh.recur(
+
+### Tickh.remove | pattern: TickAPI\.Tickh\.remove\( | matches=0 files=0
+
+### Tickh.update | pattern: TickAPI\.Tickh\.update\( | matches=4 files=2
+.\ReplicatedStorage\SharedModules_[Folder]\TickAPI_[Module]\TickAPI_[Module].luau:28:	--	TickAPI.Tickh.update(SteppedTime)						
+.\ReplicatedStorage\SharedModules_[Folder]\TickAPI_[Module]\TickAPI_[Module].luau:45:	TickAPI.Tickh.update(SteppedTime)						
+.\ServerStorage\DEVELOPER_[Folder]\ARCHIVE_VAULT_[Folder]\PureScriptCopies_[Folder]\TickAPI_[Module]\TickAPI_[Module].luau:24:	--	TickAPI.Tickh.update(SteppedTime)						
+.\ServerStorage\DEVELOPER_[Folder]\ARCHIVE_VAULT_[Folder]\PureScriptCopies_[Folder]\TickAPI_[Module]\TickAPI_[Module].luau:41:	TickAPI.Tickh.update(SteppedTime)						
+
+### Tickh.getClocks | pattern: TickAPI\.Tickh\.getClocks | matches=0 files=0
+
+### Tickh.event | pattern: TickAPI\.Tickh\.event\( | matches=0 files=0

@@ -1,0 +1,13 @@
+# Raw scratch dumps from Wave-1 research (large, machine-generated, not authored evidence).
+# The synthesized reports (research/*.md, research/scratch/**/*_out.md, survey_compact.md) stay tracked.
+research/scratch/callsites/tickfiles_dump.txt
+research/scratch/callsites/all_lines.txt
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Rojo build artifacts, if this repo is ever built into a place file
+*.rbxlx
+*.rbxl

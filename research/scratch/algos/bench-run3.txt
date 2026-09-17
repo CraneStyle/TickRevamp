@@ -1,0 +1,92 @@
+== IB  indexed binary (parallel arrays)
+  P1 arm 10k: 2.543 ms  (254 ns/op)  alloc 3481 KB
+  P2 200 idle updates: 0.004 ms  (0.02 us/update)  alloc 0 KB
+  P3 10k stops shuffled: 1.208 ms  (121 ns/op)  max single stop 1 us  size after 0
+  P4 10k adjusts shuffled: 1.921 ms  (192 ns/op)  max single adjust 4 us  size after 10000
+  P5 10k resets shuffled: 1.352 ms  (135 ns/op)
+  P6 fire storm 10k: 2.954 ms  (295 ns/dispatch)
+  P7 10k recurring, 600 updates: 39.872 ms  (66.5 us/update, 370 ns/fire, 107863 fires)  alloc 0 KB
+  P9 adjust storm x10: 14.394 ms total  max round 2.17 ms  max single op 13 us  size after 10000
+  P8 mixed churn 600 updates: 15.024 ms  (25.0 us/update)  alloc 2164 KB  size after 2455
+== IB2 indexed binary + Floyd pop + in-place recur re-key
+  P1 arm 10k: 1.915 ms  (191 ns/op)  alloc 3481 KB
+  P2 200 idle updates: 0.006 ms  (0.03 us/update)  alloc 0 KB
+  P3 10k stops shuffled: 2.845 ms  (285 ns/op)  max single stop 4 us  size after 0
+  P4 10k adjusts shuffled: 1.428 ms  (143 ns/op)  max single adjust 5 us  size after 10000
+  P5 10k resets shuffled: 2.119 ms  (212 ns/op)
+  P6 fire storm 10k: 2.858 ms  (286 ns/dispatch)
+  P7 10k recurring, 600 updates: 41.010 ms  (68.3 us/update, 380 ns/fire, 107863 fires)  alloc 0 KB
+  P9 adjust storm x10: 13.979 ms total  max round 1.62 ms  max single op 16 us  size after 10000
+  P8 mixed churn 600 updates: 14.790 ms  (24.6 us/update)  alloc 2092 KB  size after 2455
+== I4  indexed 4-ary (parallel arrays)
+  P1 arm 10k: 1.443 ms  (144 ns/op)  alloc 3481 KB
+  P2 200 idle updates: 0.006 ms  (0.03 us/update)  alloc 0 KB
+  P3 10k stops shuffled: 2.602 ms  (260 ns/op)  max single stop 8 us  size after 0
+  P4 10k adjusts shuffled: 2.446 ms  (245 ns/op)  max single adjust 158 us  size after 10000
+  P5 10k resets shuffled: 2.817 ms  (282 ns/op)
+  P6 fire storm 10k: 3.252 ms  (325 ns/dispatch)
+  P7 10k recurring, 600 updates: 39.495 ms  (65.8 us/update, 366 ns/fire, 107863 fires)  alloc 0 KB
+  P9 adjust storm x10: 12.909 ms total  max round 1.56 ms  max single op 6 us  size after 10000
+  P8 mixed churn 600 updates: 12.914 ms  (21.5 us/update)  alloc 2789 KB  size after 2455
+== I42 indexed 4-ary + in-place recur re-key
+  P1 arm 10k: 1.629 ms  (163 ns/op)  alloc 1659 KB
+  P2 200 idle updates: 0.004 ms  (0.02 us/update)  alloc 0 KB
+  P3 10k stops shuffled: 1.130 ms  (113 ns/op)  max single stop 1 us  size after 0
+  P4 10k adjusts shuffled: 1.456 ms  (146 ns/op)  max single adjust 130 us  size after 10000
+  P5 10k resets shuffled: 1.292 ms  (129 ns/op)
+  P6 fire storm 10k: 5.444 ms  (544 ns/dispatch)
+  P7 10k recurring, 600 updates: 32.403 ms  (54.0 us/update, 300 ns/fire, 107863 fires)  alloc 0 KB
+  P9 adjust storm x10: 13.536 ms total  max round 1.52 ms  max single op 47 us  size after 10000
+  P8 mixed churn 600 updates: 13.078 ms  (21.8 us/update)  alloc 2285 KB  size after 2455
+== IH  indexed binary (handle-only array)
+  P1 arm 10k: 1.834 ms  (183 ns/op)  alloc 3225 KB
+  P2 200 idle updates: 0.004 ms  (0.02 us/update)  alloc 0 KB
+  P3 10k stops shuffled: 1.483 ms  (148 ns/op)  max single stop 14 us  size after 0
+  P4 10k adjusts shuffled: 1.671 ms  (167 ns/op)  max single adjust 6 us  size after 10000
+  P5 10k resets shuffled: 1.535 ms  (153 ns/op)
+  P6 fire storm 10k: 5.147 ms  (515 ns/dispatch)
+  P7 10k recurring, 600 updates: 70.062 ms  (116.8 us/update, 650 ns/fire, 107863 fires)  alloc 0 KB
+  P9 adjust storm x10: 13.231 ms total  max round 1.75 ms  max single op 13 us  size after 10000
+  P8 mixed churn 600 updates: 19.360 ms  (32.3 us/update)  alloc 1388 KB  size after 2455
+== LZ  lazy-deletion shell over prior Heap
+  P1 arm 10k: 3.192 ms  (319 ns/op)  alloc 3994 KB
+  P2 200 idle updates: 0.011 ms  (0.06 us/update)  alloc 0 KB
+  P3 10k stops shuffled: 1.220 ms  (122 ns/op)  max single stop 380 us  size after 0
+  P4 10k adjusts shuffled: 2.768 ms  (277 ns/op)  max single adjust 358 us  size after 20000
+  P5 10k resets shuffled: 1.590 ms  (159 ns/op)
+  P6 fire storm 10k: 8.462 ms  (846 ns/dispatch)
+  P7 10k recurring, 600 updates: 92.254 ms  (153.8 us/update, 855 ns/fire, 107863 fires)  alloc 0 KB
+  P9 adjust storm x10: 26.437 ms total  max round 3.02 ms  max single op 800 us  size after 19991  rebuilds 9
+  P8 mixed churn 600 updates: 31.841 ms  (53.1 us/update)  alloc 1418 KB  size after 3474
+== PG  prior Group as built
+  P1 arm 10k: 6.641 ms  (664 ns/op)  alloc 7476 KB
+  P2 200 idle updates: 0.028 ms  (0.14 us/update)  alloc 19 KB
+  P3 10k stops shuffled: 6.929 ms  (693 ns/op)  max single stop 969 us  size after 0
+  P4 10k adjusts shuffled: 4.687 ms  (469 ns/op)  max single adjust 322 us  size after 20000
+  P5 10k resets shuffled: 3.513 ms  (351 ns/op)
+  P6 fire storm 10k: 7.900 ms  (790 ns/dispatch)
+  P7 10k recurring, 600 updates: 108.736 ms  (181.2 us/update, 1008 ns/fire, 107863 fires)  alloc 56 KB
+  P9 adjust storm x10: 46.705 ms total  max round 6.65 ms  max single op 2125 us  size after 19991
+  P8 mixed churn 600 updates: 61.520 ms  (102.5 us/update)  alloc 781 KB  size after 3544
+== SA  sorted array (table.insert/remove)
+  P1 arm 10k: 49.100 ms  (4910 ns/op)  alloc 3481 KB
+  P2 200 idle updates: 0.004 ms  (0.02 us/update)  alloc 0 KB
+  P3 10k stops shuffled: 43.804 ms  (4380 ns/op)  max single stop 163 us  size after 0
+  P4 10k adjusts shuffled: 167.252 ms  (16725 ns/op)  max single adjust 207 us  size after 10000
+  P5 10k resets shuffled: 194.825 ms  (19483 ns/op)
+  P6 fire storm 10k: 1.169 ms  (117 ns/dispatch)
+  P7 10k recurring, 600 updates: 1521.817 ms  (2536.4 us/update, 14109 ns/fire, 107863 fires)  alloc 0 KB
+  P9 adjust storm x10: 1757.679 ms total  max round 183.83 ms  max single op 1534 us  size after 10000
+  P8 mixed churn 600 updates: 151.337 ms  (252.2 us/update)  alloc 4961 KB  size after 2455
+== TW  hashed timing wheel 1024x1/60
+  P1 arm 10k: 2.482 ms  (248 ns/op)  alloc 3273 KB
+  P2 200 idle updates: 0.040 ms  (0.20 us/update)  alloc 0 KB
+  P3 10k stops shuffled: 1.833 ms  (183 ns/op)  max single stop 77 us  size after 0
+  P4 10k adjusts shuffled: 2.165 ms  (216 ns/op)  max single adjust 130 us  size after 10000
+  P5 10k resets shuffled: 1.416 ms  (142 ns/op)
+  P6 fire storm 10k: 0.595 ms  (59 ns/dispatch)
+  P7 10k recurring, 600 updates: 9.726 ms  (16.2 us/update, 90 ns/fire, 107863 fires)  alloc 2296 KB
+  P9 adjust storm x10: 21.314 ms total  max round 2.62 ms  max single op 19 us  size after 10000
+  P8 mixed churn 600 updates: 10.987 ms  (18.3 us/update)  alloc 3291 KB  size after 2455
+
+collectgarbage('collect') available: false collectgarbage called with invalid option

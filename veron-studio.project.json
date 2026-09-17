@@ -1,0 +1,24 @@
+{
+	"name": "VeronStudioTest",
+	"tree": {
+		"$className": "DataModel",
+		"ReplicatedStorage": {
+			"$className": "ReplicatedStorage",
+			"Veron": {
+				"$path": "build/src/Veron"
+			},
+			"LegacyTick": {
+				"$path": "reference/lune/Tick.luau"
+			}
+		},
+		"ServerScriptService": {
+			"$className": "ServerScriptService",
+			"VeronRun": {
+				"$path": "build/studio/VeronRun.server.luau"
+			},
+			"ComparePerf": {
+				"$path": "build/studio/ComparePerf.server.luau"
+			}
+		}
+	}
+}
